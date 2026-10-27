@@ -1,2 +1,13 @@
 [project]
 name = "BoltTorqueCalculator"
+version = "0.1.0"
+description = "A Python package for calculating bolt torque based on various parameters."
+authors = [
+    { name = "George Lucas", email = "glsoftwareprojects@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [TODO]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
