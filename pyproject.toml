@@ -6,7 +6,7 @@ authors = [
     { name = "George Lucas", email = "glsoftwareprojects@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = [TODO]
+#dependencies = [TODO]
 
 [build-system]
 requires = ["setuptools>=68.0"]
