@@ -112,17 +112,17 @@ def calculate_torsional_shear_stress(thread_torque_nm: float, stress_area_m2: fl
 
 
 def calculate_von_mises_stress(
-        tensile_stress_n: float,
-        torsional_shear_stress_nm: float
+        tensile_stress_pa: float,
+        torsional_shear_stress_pa: float
 ) -> float:
     """Returns the von mises stress.
     
     σ_vm = √(σ² + 3τ²)
-    Where σ is the tensile stress in N and
-    τ is the torsional shear stress in Nm.
+    Where σ is the tensile stress in Pa and
+    τ is the torsional shear stress in Pa.
     """
-    stress_square = tensile_stress_n ** 2
-    torsional_shear_stress_square = torsional_shear_stress_nm ** 2
+    stress_square = tensile_stress_pa ** 2
+    torsional_shear_stress_square = torsional_shear_stress_pa ** 2
 
     return math.sqrt(stress_square + (3 * torsional_shear_stress_square))
 

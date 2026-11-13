@@ -71,9 +71,9 @@ def test_custom_k_m10():
                                 pitch_diameter_m=0.009026, bearing_friction=0.15,
                                 bearing_diameter_m=0.013, nominal_diameter_m=0.01)
 
-    # Pitch term ≈ 0.0015/6.2832 ≈ 2.837e-4 m
+    # Pitch term ≈ 0.0015/6.2832 ≈ 2.387e-4 m
     # Thread friction term ≈ (0.15 x 9.026e-3) / (2 cos 30) ≈ 7.817e-4 m
-    # Bearing friction term ≈ (0.15 x 0.0013) / 2 = 9.75e-4 m
+    # Bearing friction term ≈ (0.15 x 0.013) / 2 = 9.75e-4 m
     # Therefore K ≈ (2.837e-4 + 7.817e-4 + 9.75e-4) / 0.010 ≈ 0.19954
     assert result == pytest.approx(0.19954, rel=0.001)
 
@@ -116,7 +116,7 @@ def test_torsional_shear_stress():
         thread_torque_nm=25.51, stress_area_m2=58e-6
     )
 
-    # d_s ≈ √((4 * 58e-6) / π) ≈ 8.5935e-5
+    # d_s ≈ √((4 * 58e-6) / π) ≈ 8.5935e-3
     # τ = (16 * 25.51) / (π * d_s^3)
     assert result == pytest.approx(204726188.2, rel=0.001)
 
@@ -126,7 +126,7 @@ def test_von_mises_stress_m10():
     which is equal to σ_vm = √(σ² + 3τ²)
     """
     result = calculate_von_mises_stress(
-        tensile_stress_n=431.01e6, torsional_shear_stress_nm=204.73e6
+        tensile_stress_pa=431.01e6, torsional_shear_stress_pa=204.73e6
     )
 
     # 431.01e6 ^2 = 1.8577e17
@@ -159,5 +159,5 @@ def test_proof_load_utilisation_m10_vm():
         proof_strength_pa=580e6
     )
 
-    # 431.03e6 / 580e6 = 0.9623275862
+    # 558.15e6 / 580e6 = 0.9623275862
     assert result == pytest.approx(0.9623275862)
