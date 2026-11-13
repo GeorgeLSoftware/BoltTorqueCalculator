@@ -74,7 +74,7 @@ def test_custom_k_m10():
     # Pitch term ≈ 0.0015/6.2832 ≈ 2.387e-4 m
     # Thread friction term ≈ (0.15 x 9.026e-3) / (2 cos 30) ≈ 7.817e-4 m
     # Bearing friction term ≈ (0.15 x 0.013) / 2 = 9.75e-4 m
-    # Therefore K ≈ (2.837e-4 + 7.817e-4 + 9.75e-4) / 0.010 ≈ 0.19954
+    # Therefore K ≈ (2.387e-4 + 7.817e-4 + 9.75e-4) / 0.010 ≈ 0.19954
     assert result == pytest.approx(0.19954, rel=0.001)
 
 
@@ -104,7 +104,7 @@ def test_thread_torque_m10():
 
     # Pitch term ≈ 0.0015 / 2π ≈ 2.387e-4
     # Thread friction term ≈ (0.15 * 0.009026) / (2 cos 30) ≈ 7.817e-4
-    # T_th ≈ 25000 * (2.837e-4 + 7.817e-4) ≈ 25.51 Nm
+    # T_th ≈ 25000 * (2.387e-4 + 7.817e-4) ≈ 25.51 Nm
     assert result == pytest.approx(25.51, rel=0.001)
 
 

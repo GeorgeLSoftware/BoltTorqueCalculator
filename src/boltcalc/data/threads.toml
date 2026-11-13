@@ -1,0 +1,95 @@
+# TOML file that contains generic thread data regardless
+# of material, e.g. thread dimensions.
+# Units are mm and mm^2 
+# Screw basic dimensions are as per ISO 724
+# Stress areas are as per ISO 898-1
+
+[threads.M2]
+nominal_diameter_mm = 2.0
+pitch_mm = 0.4
+pitch_diameter_mm = 1.740
+stress_area_mm2 = 
+
+[threads."M2.5"]
+nominal_diameter_mm = 2.5 
+pitch_mm = 0.45
+pitch_diameter_mm = 2.208 
+stress_area_mm2 = 
+
+[threads.M3]
+nominal_diameter_mm = 3.0
+pitch_mm = 0.5
+pitch_diameter_mm = 2.675
+stress_area_mm2 = 5.03
+
+[threads.M4]
+nominal_diameter_mm = 4.0
+pitch_mm = 0.7
+pitch_diameter_mm = 3.545
+stress_area_mm2 = 8.78
+
+[threads.M5]
+nominal_diameter_mm = 5.0
+pitch_mm = 0.8
+pitch_diameter_mm = 4.480
+stress_area_mm2 = 14.2
+
+[threads.M6]
+nominal_diameter_mm = 6.0
+pitch_mm = 1.0
+pitch_diameter_mm = 5.350
+stress_area_mm2 = 20.1
+
+[threads.M8]
+nominal_diameter_mm = 8.0
+pitch_mm = 1.25
+pitch_diameter_mm = 7.188
+stress_area_mm2 = 36.6
+
+[threads.M10]
+nominal_diameter_mm = 10.0
+pitch_mm = 1.5
+pitch_diameter_mm = 9.026
+stress_area_mm2 = 58.0
+
+[threads.M12]
+nominal_diameter_mm = 12.0
+pitch_mm = 1.75
+pitch_diameter_mm = 10.863
+stress_area_mm2 = 84.3
+
+[threads.M14]
+nominal_diameter_mm = 14.0
+pitch_mm = 2.0
+pitch_diameter_mm = 12.701
+stress_area_mm2 = 115.0
+
+[threads.M16]
+nominal_diameter_mm = 16.0
+pitch_mm = 2.0
+pitch_diameter_mm = 14.701
+stress_area_mm2 = 157.0
+
+[threads.M18]
+nominal_diameter_mm = 18.0
+pitch_mm = 2.5
+pitch_diameter_mm = 16.376
+stress_area_mm2 = 192.0
+
+[threads.M20]
+nominal_diameter_mm = 20.0
+pitch_mm = 2.5
+pitch_diameter_mm = 18.376
+stress_area_mm2 = 245.0
+
+[threads.M22]
+nominal_diameter_mm = 22.0
+pitch_mm = 2.5
+pitch_diameter_mm = 20.376
+stress_area_mm2 = 303.0
+
+[threads.M24]
+nominal_diameter_mm = 24.0
+pitch_mm = 3.0
+pitch_diameter_mm = 22.051
+stress_area_mm2 = 353.0
